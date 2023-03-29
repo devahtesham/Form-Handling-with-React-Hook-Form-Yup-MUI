@@ -13,7 +13,7 @@ const InputField = ({label,inputProps,type,control,name,errors}) => {
         <Controller
             name={name}
             control={control}
-            render={({ field }) =>  <TextField {...field} required label={label} variant="filled" InputProps={inputProps} {...addErrorIntoFields(errors[name])} />}
+            render={({ field }) =>  <TextField {...field} required label={label} variant="outlined" InputProps={inputProps} {...addErrorIntoFields(errors[name])} />}
       />
         {
             errors[name] ? <ErrorMessage message={errors[name].message} /> : null

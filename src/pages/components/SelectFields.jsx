@@ -17,7 +17,7 @@ const SelectFields = ({label,control,name,errors}) => {
                 required
                 select
                 label={label}
-                variant="filled"
+                variant="outlined"
                 {...addErrorIntoFields(errors[name])}
                 {...field}
             >

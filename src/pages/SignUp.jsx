@@ -35,9 +35,9 @@ const { handleSubmit,control,formState:{errors} }  = useForm({
     },
     resolver: yupResolver(schema)
 }) 
-console.log("errors",errors);
+// console.log("errors",errors);
 const formSubmitHandler = (data)=>{
-    console.log("data",data);
+    console.log("data",data)
 }
     return (
         <Box sx={{
